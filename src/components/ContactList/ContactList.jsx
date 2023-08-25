@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { List, Item, Button } from './ContactList.styled';
 
-// Компонент списка контактов
+// Компонент списку контактів 
 const ContactList = ({ contacts, onRemoveContact }) => (
   <List>
     {contacts.map(contact => (
       <Item key={contact.id}>
         {contact.name + ' : ' + contact.number}
         {
-          // Кнопка удаления контакта
+          // Кнопка видалення контакту
           <Button
             type="button"
             name="delete"
